@@ -14,8 +14,14 @@
 * **Фреймворк:** Spring Boot 3.2
 * **База данных:** PostgreSQL 15 (отдельные БД для каждого сервиса)
 * **Брокер сообщений:** Apache Kafka (+ Zookeeper)
+* **API Documentation:** Swagger (OpenAPI)
 * **Контейнеризация:** Docker, Docker Compose
 * **Frontend:** HTML/JS + WebSocket (SockJS, STOMP) для Push-уведомлений
+
+## Документация API
+После запуска системы интерактивная документация доступна по адресам:
+* **Order Service API:** [http://127.0.0.1:8080/swagger-ui/index.html](http://127.0.0.1:8080/swagger-ui/index.html)
+* **Payment Service API:** [http://127.0.0.1:8081/swagger-ui/index.html](http://127.0.0.1:8081/swagger-ui/index.html)
 
 ## Архитектура и Сервисы
 
