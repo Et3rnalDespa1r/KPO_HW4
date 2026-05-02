@@ -101,4 +101,4 @@ curl -X POST "[http://127.0.0.1:8080/orders?userId=1&amount=9999](http://127.0.0
 3. `Order Service` отправляет событие в Kafka (`payment-requests`).
 4. `Payment Service` читает Kafka -> проверяет дубликат (Inbox) -> списывает средства -> сохраняет результат в свой `outbox`.
 5. `Payment Service` отправляет результат в Kafka (`payment-results`).
-6. `Order Service` читает результат -> обновляет статус заказа -> отправляет Push в WebSocket.
+6. `Order Service` читает результат -> обновляет статус заказа -> отправляет Push в WebSocket
